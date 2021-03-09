@@ -1,6 +1,9 @@
 # Object Oriented Programming
 
-helfpful link: [FreeCodeCamp on 4 Pillars of OOP](https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/)
+Mon 3/8/21
+
+Project: Adventure Game I (Github link goes here)
+
 
 ## 4 pillars:
 
@@ -8,6 +11,8 @@ helfpful link: [FreeCodeCamp on 4 Pillars of OOP](https://www.freecodecamp.org/n
 2. Abstraction
 3. Inheritance
 4. Polymorphism
+
+helfpful link: [FreeCodeCamp on 4 Pillars of OOP](https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/)
 
 ### Encapsulation
 
