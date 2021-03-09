@@ -127,15 +127,16 @@ example class: Animal
 
 ### Enclosing
 
-* First looks in local, then goes to Enclosing (parent function)
+- First looks in local, then goes to Enclosing (parent function)
 
 ### Global
 
-* A variable that isn't enclosed by a function
-* Global vars can be declared inside a function using `global` keyword
+- A variable that isn't enclosed by a function
+- Global vars can be declared inside a function using `global` keyword
+
 ### Builtin
 
-* Uses python default variables if available
+- Uses python default variables if available
 
 ## Instance vs Class
 
@@ -145,6 +146,7 @@ Self.anything means it's referencing the instance, not the class
 @classmethod 
 def functionName(cls):
 ``` 
+
 This is a class function because it takes the class and not self as a param, it will affect the actual class rather than the individual
 
 `class` is a reserved keyword, param used is `cls`
@@ -154,4 +156,5 @@ example use: counter of how many instances have been created
 ```python
 def fucntionName():
 ```
+
 This is also a class method because it doesn't reference self, different style of writing
