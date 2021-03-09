@@ -10,5 +10,5 @@ class Color:
         return self._name
     name = property(_get_name, _set_name)
 
-    c = Color("#0000ff", "bright red")
-    print(c.name)
+    # c = Color("#0000ff", "bright red")
+    # print(c.name)
