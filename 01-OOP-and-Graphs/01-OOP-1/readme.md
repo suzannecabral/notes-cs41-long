@@ -76,7 +76,7 @@ Rook has different movement rules than Pawn. They each have a .move() method tha
         expiration
 ```
 
-### Class methods
+## Class methods
 
 ```__init__```
 
@@ -89,6 +89,7 @@ Rook has different movement rules than Pawn. They each have a .move() method tha
 - you can set it to return useful info for debugging
 - by default it returns the object's location in memory.
 - str is informal, meant to be readable for end users
+- accessed with print(object) or print(str(object))
 
 ```__repr__```
 
@@ -96,3 +97,61 @@ Rook has different movement rules than Pawn. They each have a .move() method tha
 - convention: set it to show how you create a new instance of that object, required parameters
 - repr is meant to be "official", gives all info about an object
 - meant to be unambiguous for developers
+- accessed with print(repr(object))
+
+### Name Mangling
+
+reference: [Geeks for Geeks](https://www.geeksforgeeks.org/name-mangling-in-python/)
+
+`_classname__identifier`
+
+example class: Animal
+
+`__animal` is replaced with `_classname__animal`
+
+> ... I'm still very confused by this, need to look up / ask more about what this accomplishes and how it actually happens, which parts are dev input and which parts are python's interpreter
+
+## Scope in Python
+
+### LEGB
+
+1. Local
+2. Enclosing
+3. Global
+4. Builtin
+
+### Local
+
+* first scope accessed
+* any variables defined inside the function
+
+### Enclosing
+
+* First looks in local, then goes to Enclosing (parent function)
+
+### Global
+
+* A variable that isn't enclosed by a function
+* Global vars can be declared inside a function using `global` keyword
+### Builtin
+
+* Uses python default variables if available
+
+## Instance vs Class
+
+Self.anything means it's referencing the instance, not the class
+
+```python 
+@classmethod 
+def functionName(cls):
+``` 
+This is a class function because it takes the class and not self as a param, it will affect the actual class rather than the individual
+
+`class` is a reserved keyword, param used is `cls`
+
+example use: counter of how many instances have been created
+
+```python
+def fucntionName():
+```
+This is also a class method because it doesn't reference self, different style of writing
