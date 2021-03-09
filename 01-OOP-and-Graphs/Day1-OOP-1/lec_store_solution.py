@@ -1,4 +1,4 @@
-from Department import Department
+from lec_department_solution import Department
 
 class Store:
     # attributes
