@@ -12,7 +12,7 @@ using debugger to visualize
     - newuser_id
     - self.friendships
 
-> lecture video (LINK ME) has a good step-by-step explanation of what happens to each variable through the steps
+> [lecture video](https://youtu.be/hpy8ztTbC1A) has a good step-by-step explanation of what happens to each variable through the steps
 
 - there is some redundancy when appending to queue, ie `[1,9,4,9]` 
 
@@ -29,4 +29,45 @@ dense vs sparse graphs
 
 using time module in python to test how long program is taking
 
+### Stack
+
+```python
+class Stack():
+    def __init__(self):
+        self.storage = []
+
+    def push(self, value):
+        self.storage.append(value)
+    
+    def pop(self):
+        if self.size() > 0:
+            return self.storage.pop()
+        else:
+            return None
+
+    def size(self): 
+        return len(self.storage)
+
+```
+
+### Queue
+
+```python
+class Queue():
+    def __init(self):
+        self.storage = []
+
+    def enqueue(self, value):
+        self.storage.append(value)
+
+    def dequeue(self):
+        if self.size() > 0:
+            return self.storage.pop(0)
+        else:
+            return None
+
+    def size(self):
+        return len(self.storage)
+```
+Exact same thing, using lists, except queue removes at index 0
 

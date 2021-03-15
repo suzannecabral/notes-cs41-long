@@ -4,3 +4,9 @@
 [submodule "01-OOP-and-Graphs/Graphs"]
 	path = 01-OOP-and-Graphs/Graphs
 	url = https://github.com/suzannecabral/Graphs.git
+[submodule "decagon_cs41-long"]
+	path = decagon_cs41-long
+	url = https://github.com/suzannecabral/CS_41_long.git
+[submodule "01-OOP-and-Graphs/sprint-intro-python"]
+	path = 01-OOP-and-Graphs/sprint-intro-python
+	url = https://github.com/suzannecabral/Sprint-Challenge--Intro-Python.git
