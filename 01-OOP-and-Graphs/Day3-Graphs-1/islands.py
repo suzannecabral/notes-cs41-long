@@ -47,12 +47,12 @@ def island_counter(island_matrix):
     # walk through each cell in the matrix
     for row in range(len(island_matrix)):
         # first row defines cols, like spreadsheet
-        for col in range(island_matrix[0])
+        for col in range(island_matrix[0]):
 
             # if the current cell hasn't been visited bfore
-            if not visited[row][col]
+            if not visited[row][col]:
                 # check if it is a 1
-                if island_matrix[row][col] == 1"
+                if island_matrix[row][col] == 1:
                 # if so:
                     # do some sort of a traversal, marking each connected node as visited
                     visited = dft(row, col, island_matrix, visited)
@@ -112,12 +112,13 @@ def get_neighbors(row, col, matrix):
     if row < len(matrix) - 1 and matrix[row + 1][col] == 1:
         neighbors.append((row + 1, col))
     # check east
-    if col < len(matrix[0]) - 1 and matrix[row][col + 1]
+    if (col < len(matrix[0]) - 1 and matrix[row][col + 1]):
         # ... missed
+        pass
     # check west
     if col > 0 and matrix[row][col - 1] == 1:
         #.... missed
-
+        pass
     # return the list of neighbors to the caller
 
 
