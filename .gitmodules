@@ -10,3 +10,9 @@
 [submodule "01-OOP-and-Graphs/sprint-intro-python"]
 	path = 01-OOP-and-Graphs/sprint-intro-python
 	url = https://github.com/suzannecabral/Sprint-Challenge--Intro-Python.git
+[submodule "02-Architecture/project-computer-architecture"]
+	path = 02-Architecture/project-computer-architecture
+	url = https://github.com/LambdaSchool/Computer-Architecture.git
+[submodule "02-Architecture/proj-architecture"]
+	path = 02-Architecture/proj-architecture
+	url = https://github.com/suzannecabral/Computer-Architecture.git

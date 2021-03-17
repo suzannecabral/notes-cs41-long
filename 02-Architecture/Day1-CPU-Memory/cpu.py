@@ -14,7 +14,11 @@ PRINT_NAME = 0b101000
 
 
 # Memory
-ram = [0] * 255
+# ram = [0] * 255
+ram = [
+    PRINT_NAME,
+    HALT,
+]
 
 # program counter
 pc = 0
@@ -33,15 +37,19 @@ while True:
     if inst == PRINT_NAME:
         #execute
         print("Tom")
+        pc += 1
     
     # decode
     elif inst == HALT:
         running = False
+        pc += 1
 
     # decode
     elif inst = LOAD_NUM:
+        pc += 1
         pass
 
     # decode
     elif inst = PRINT_NUM:
+        pc += 1
         pass
